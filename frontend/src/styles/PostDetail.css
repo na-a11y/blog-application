@@ -1,0 +1,86 @@
+/* Post Detail Styling */
+.container {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+  color: #00796b;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.author {
+  text-align: right;
+  font-style: italic;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.edit {
+  background-color: #00796b;
+  color: white;
+}
+
+button.edit:hover {
+  background-color: #005f56;
+}
+
+button.delete {
+  background-color: #d32f2f;
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #b71c1c;
+}
+
+/* Link inside the buttons styling */
+button a {
+  color: white;
+  text-decoration: none;  /* Remove underline */
+  display: inline-block;
+  width: 100%;  /* Ensure the link covers the full button */
+  height: 100%;  /* Ensures clickable area is entire button */
+  text-align: center;
+  padding: 12px 25px;  /* Ensures padding consistency inside the button */
+}
+
+button a:hover {
+  color: white;  /* Keep the text white even on hover */
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+}

@@ -1,0 +1,68 @@
+/* Global styles for a clean layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+li {
+  background-color: #ffffff;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li:hover {
+  background-color: #dfe6ed;
+  transform: translateY(-3px);
+}
+
+h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-size: 16px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  border: none;
+  background-color: #1a73e8;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #155bc4;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
