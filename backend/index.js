@@ -9,7 +9,11 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:3000'], // Replace with your frontend origins
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true // Allows cookies to be sent with requests
+}));
 
 // Routes
 app.use('/api/blog', blogRoutes);

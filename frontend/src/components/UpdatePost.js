@@ -23,7 +23,7 @@ const UpdatePost = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/api/blog/posts/${id}`, { title, content, author });
+      await axios.put(`https://blog-application-drab.vercel.app/api/blog/posts/${id}`, { title, content, author });
       navigate(`/posts/${id}`);
     } catch (error) {
       console.error(error);
