@@ -26,21 +26,20 @@ const PostDetail = () => {
   if (!post) return <p>Loading...</p>;
 
   return (
-   
-    <div className="container">
-    <h2>{post.title}</h2>
-    <p>{post.content}</p>
-    <p className="author">By: {post.author}</p>
-    <div className="buttons">
-      <button className="edit">
-        <Link to={`/update/${post._id}`}>Edit Post</Link>
-      </button>
-      <button className="delete" onClick={handleDelete}>Delete Post</button>
+    <div className="post-detail-container">
+      <div className="post-detail">
+        <h2>{post.title}</h2>
+        <p>{post.content}</p>
+        <p className="post-author">By: {post.author}</p>
+        <div className="button-group">
+          <button>
+            <Link to={`/update/${post._id}`}>Edit Post</Link>
+          </button>
+          <button onClick={handleDelete}>Delete Post</button>
+        </div>
+      </div>
     </div>
-  </div>
-    );
-    
- 
+  );
 };
 
 export default PostDetail;

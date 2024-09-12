@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+/*import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import '../styles/BlogList.css';
 
 const BlogList = () => {
   const [posts, setPosts] = useState([]);
@@ -12,23 +13,26 @@ const BlogList = () => {
   }, []);
 
   return (
-    <div>
-      <h2>All Blog Posts</h2>
+    <div className="blog-list-container">
+      <div className="header-container">
       
-      {/* Add Create Post Button */}
-      <Link to="/create">
-        <button>Create New Post</button>
-      </Link>
-
-      {posts.map(post => (
-        <div key={post._id}>
-          <h3>{post.title}</h3>
-          <p>{post.content.substring(0, 100)}...</p>
-          <Link to={`/post/${post._id}`}>Read More</Link>
-        </div>
-      ))}
+        <h2>All Blog Posts</h2>
+       
+      </div>
+      <ul>
+        {posts.map(post => (
+          <li key={post._id}>
+            <Link to={`/post/${post._id}`}>
+              <h3>{post.title}</h3>
+              <p>{post.content.substring(0, 100)}...</p>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
 
 export default BlogList;
+
+*/
